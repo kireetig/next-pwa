@@ -1,6 +1,6 @@
 #next-pwa
 
-This is for learning purpose only
+This is created to learn next.js with react and Pwa with ssr.
 
 This project was bootstrapped with [Create Next App](https://github.com/segmentio/create-next-app).
 
@@ -236,3 +236,4 @@ You can find more details about [`now` here](https://zeit.co/now).
 ## Something Missing?
 
 If you have ideas for how we could improve this readme or the project in general, [let us know](https://github.com/segmentio/create-next-app/issues) or [contribute some!](https://github.com/segmentio/create-next-app/edit/master/lib/templates/default/README.md)
+
