@@ -1,7 +1,13 @@
-import React, { Fragment } from 'react';
+import React, {FC, Fragment} from 'react';
 import ProgressiveImage from 'react-progressive-image';
 
-const Image = ({ src, alt, className }) => (
+interface ImageProps {
+  src: any;
+  alt: any;
+  className?: any;
+}
+
+const Image:FC<ImageProps> = ({ src, alt, className }) => (
   <ProgressiveImage
     src={src}
     placeholder="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
