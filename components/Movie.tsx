@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Router from 'next/router';
 import Link from 'next/link';
 
@@ -6,16 +6,15 @@ import Image from './Image';
 
 import { getImageSrc } from '../utils/apiCalls';
 
-class Movie extends Component {
-    prefetchMoviePage = () => {
-        Router.prefetch(`/movie?id=${this.props.id}`);
+const Movie = (props) => {
+   const prefetchMoviePage = () => {
+        Router.prefetch(`/movie?id=${props.id}`);
     };
 
-    render() {
-        const { id, poster_path, title, overview } = this.props;
+        const { id, poster_path, title, overview } = props;
         return (
             <Link as={`/movie/${id}`} href={`/movie?id=${id}`}>
-                <div className="card" id={`movie-${id}`} onMouseEnter={this.prefetchMoviePage}>
+                <div className="card" id={`movie-${id}`} onMouseEnter={prefetchMoviePage}>
                     <div className="card-image">
                         <Image src={getImageSrc(poster_path, 342)} alt={`Poster for ${title}`} className="img-responsive" />
                     </div>
@@ -26,7 +25,6 @@ class Movie extends Component {
                 </div>
             </Link>
         );
-    }
 }
 
 export default Movie;

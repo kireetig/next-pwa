@@ -1,18 +1,16 @@
-import React, { PureComponent } from 'react';
+import React, {useEffect} from 'react';
 
-class OfflineSupport extends PureComponent {
-    componentDidMount() {
+const OfflineSupport = () => {
+    useEffect(() => {
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
                 .register('/sw.js')
                 .then(() => console.log('service worker registered.'))
                 .catch(err => console.dir(err));
         }
-    }
+    }, []);
 
-    render() {
-        return null;
-    }
-}
+    return null;
+};
 
 export default OfflineSupport;
