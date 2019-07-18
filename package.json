@@ -11,6 +11,7 @@
     "isomorphic-unfetch": "^3.0.0",
     "lru-cache": "^5.1.1",
     "next": "^9.0.2",
+    "next-workbox-webpack-plugin": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-progressive-image": "^0.6.0"
@@ -18,7 +19,6 @@
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "css-purify-webpack-loader": "^1.0.1",
-    "next-workbox-webpack-plugin": "^1.1.0",
     "webpack-pwa-manifest": "^4.0.0"
   }
 }
