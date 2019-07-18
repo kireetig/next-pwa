@@ -29,7 +29,6 @@ const Header = () => {
                 <title>Movies PWA</title>
                 <link rel="manifest" href="/_next/static/manifest.json"/>
                 <link rel="icon" href="/static/favicon.ico"/>
-                <link rel="stylesheet" href="/_next/static/style.css" />
             </Head>
             <Loader loading={loading}/>
             <Nav/>
