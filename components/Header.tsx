@@ -37,6 +37,6 @@ const Header = () => {
     );
 };
 
-const Loader = ({loading}) => <div className={loading ? 'loading-show' : ''} id="loader-bar"/>;
+const Loader = ({loading}) => <div className={loading ? 'loading-show' : 'hide'} id="loader-bar"/>;
 
 export default Header;
