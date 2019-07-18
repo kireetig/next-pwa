@@ -88,7 +88,7 @@ module.exports = withCSS({
             },
             icons: [
               {
-                src: path.resolve('static/movie.png'),
+                src: path.resolve('static/favicon.ico'),
                 sizes: [96, 128, 192, 256, 384, 512],
                 destination: '/static',
               },
