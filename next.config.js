@@ -14,7 +14,7 @@ module.exports = withCSS({
       config.module.rules.find(({ test }) => test.test('style.css')).use.push({
         loader: 'css-purify-webpack-loader',
         options: {
-          includes: ['./pages/*.js', './components/*.js'],
+          includes: ['./pages/*.tsx', './components/*.tsx'],
         },
       });
     }
