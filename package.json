@@ -14,11 +14,9 @@
     "next-workbox-webpack-plugin": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-progressive-image": "^0.6.0"
-  },
-  "devDependencies": {
     "autoprefixer": "^9.6.1",
     "css-purify-webpack-loader": "^1.0.1",
-    "webpack-pwa-manifest": "^4.0.0"
+    "webpack-pwa-manifest": "^4.0.0",
+    "react-progressive-image": "^0.6.0"
   }
 }
