@@ -88,12 +88,8 @@ module.exports = withCSS({
             },
             icons: [
               {
-                src: path.resolve('static/movie.png'),
-                sizes: [96, 128, 192, 256, 384],
-                destination: '/static',
-              },{
                 src: path.resolve('static/ios_splash.png'),
-                sizes: [512],
+                sizes: [96, 128, 192, 256, 384,512],
                 destination: '/static',
               },{
                 src: path.resolve('static/movie.png'),
