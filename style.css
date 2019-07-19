@@ -108,3 +108,15 @@ img {
 img.loading-img {
     opacity: 0.5;
 }
+
+.mynav{
+    background: #5755d9;
+}
+
+.color-white{
+    color: white !important;
+}
+
+.hide{
+    display: none;
+}

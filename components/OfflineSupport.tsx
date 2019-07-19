@@ -8,7 +8,7 @@ const OfflineSupport = () => {
                 .then(() => console.log('service worker registered.'))
                 .catch(err => console.dir(err));
         }
-    }, []);
+    });
 
     return null;
 };

@@ -14,7 +14,7 @@ module.exports = withCSS({
       config.module.rules.find(({ test }) => test.test('style.css')).use.push({
         loader: 'css-purify-webpack-loader',
         options: {
-          includes: ['./pages/*.js', './components/*.js'],
+          includes: ['./pages/*.tsx', './components/*.tsx'],
         },
       });
     }
@@ -75,12 +75,12 @@ module.exports = withCSS({
             name: 'Next PWA',
             short_name: 'Next-PWA',
             description: 'A Movie browsing PWA using Next.js and Google Workbox',
-            background_color: '#ffffff',
+            background_color: 'lightblue',
             theme_color: '#5755d9',
             display: 'standalone',
             orientation: 'portrait',
             fingerprints: false,
-            inject: false,
+            inject: true,
             start_url: '/',
             ios: {
               'apple-mobile-web-app-title': 'Next-PWA',
@@ -91,6 +91,16 @@ module.exports = withCSS({
                 src: path.resolve('static/movie.png'),
                 sizes: [96, 128, 192, 256, 384, 512],
                 destination: '/static',
+              },{
+                src: path.resolve('static/movie.png'),
+                sizes: [120, 152, 167, 180, 1024],
+                destination: '/static',
+                ios: true
+              },{
+                src: path.resolve('static/movie.png'),
+                size: 1024,
+                destination: '/static',
+                ios: 'startup'
               },
             ],
             includeDirectory: true,
