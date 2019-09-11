@@ -2,11 +2,12 @@ import Head from 'next/head';
 
 import Movie from '../components/Movie';
 import Oops from '../components/Oops';
+import style from '../scss/styles.scss';
 
 import { getUpcomingMovies } from '../utils/apiCalls';
 
 const Home = ({ movies, error }) => (
-  <div className="home">
+  <div className={`home`}>
     <Head>
       <title>Index | Movies PWA</title>
     </Head>

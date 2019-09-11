@@ -2,6 +2,7 @@ const withSass = require('@zeit/next-sass');
 
 module.exports = withSass({
     target: 'serverless',
+    cssModules: true,
     webpack(config, {isServer, buildId, dev, defaultLoaders}) {
         // Fixes npm packages that depend on `fs` module
         config.node = {
@@ -10,7 +11,7 @@ module.exports = withSass({
 
         // next.config.js
         config.module.rules.forEach(rule => {
-            if (rule.test.toString().includes('.css')) {
+            if (rule.test.toString().includes('.scss')) {
                 rule.rules = rule.use.map(useRule => {
                     if (typeof useRule === 'string') {
                         return {
@@ -21,7 +22,7 @@ module.exports = withSass({
                         return {
                             oneOf: [
                                 {
-                                    test: /\.global\.css$/,
+                                    test: /\.global\.scss$/,
                                     loader: useRule.loader,
                                     options: {
                                         ...useRule.options,
