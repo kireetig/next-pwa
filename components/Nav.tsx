@@ -1,12 +1,10 @@
 import Link from 'next/link';
-
-import '../spectre.css';
-import '../style.css';
+import style from '../scss/style.scss';
 
 const Nav = () => (
-  <header className="navbar mynav">
+  <header className={`navbar mynav ${style.test}`}>
     <section className="navbar-section">
-      <Link prefetch href="/">
+      <Link href="/">
         <button className="btn btn-link text-bold color-white">Home</button>
       </Link>
     </section>

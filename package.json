@@ -6,14 +6,14 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "autoprefixer": "^9.6.1",
-    "css-purify-webpack-loader": "^1.0.1",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "lru-cache": "^5.1.1",
     "next": "^9.0.2",
     "next-workbox-webpack-plugin": "^1.1.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-progressive-image": "^0.6.0",
